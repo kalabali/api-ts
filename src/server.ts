@@ -1,8 +1,8 @@
 import dotenv from 'dotenv';
 import app from './app';
 
-dotenv.config();
+import { PORT } from './helpers/customs-validation';
 
-app.listen(process.env.PORT, () => {
-    console.log(`app listen on port ${process.env.PORT}`);
+app.listen(PORT, () => {
+    console.log(`app listen on port ${PORT}`);
 })
