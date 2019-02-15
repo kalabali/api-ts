@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { param, validationResult, Result } from 'express-validator/check';
 
-import { validateMonthRange, validateYearRange } from '../helpers/customs-validation';
+import { validateMonthRange, validateYearRange } from '../lib/customs-validation';
 
 const router:Router = Router();
 
